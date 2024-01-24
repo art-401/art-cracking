@@ -47,7 +47,7 @@ for agent in range(10000):
         l='Mobile Safari/533.1'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
         ugen.append(fullagnt)
-for x in range(10000)
+for x in range(10000):
     aa='Mozilla/5.0 (Windows NT 6.1; WOW64)'
     b=random.choice(['4','5','6','7','8','9','10','11','12'])
     c='ASUS_I006D Build/RKQ1.201022.002'
