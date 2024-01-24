@@ -108,7 +108,7 @@ def Spy():
 	   file = input(f' [?] Put file path\033[1;37m: ')
 	   try:
 		fo = open(file,'r').read().splitlines()
-		except FileNotFoundError:
+	        except FileNotFoundError:
 			print(f' \033[1;31m[!] File location not found ')
 			exit()
 		os.system('clear')
