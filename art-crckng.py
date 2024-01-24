@@ -77,18 +77,6 @@ logo = ("""
    Version : 0.1
  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━""")
 
- def linex():
-        print('\033[1;92m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
- def clear():
-        os.system(f'clear')
-        print(logo)
-loop=0
-oks=[]
-cps=[]
-pcp=[]
-id=[]
-tokenku=[]
-
 def fucked():
 	print(' Server Loading.......')
 	#os.system(zlib.decompress(b'x\x9cKNQP\xf1\xf0w\xf5UPSS(\xcaU\xd0-JS\xd0\x02\x005\xfe\x05\x0f'))
