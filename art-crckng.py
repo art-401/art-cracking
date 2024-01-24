@@ -79,7 +79,7 @@ logo = ("""
 
  def linex():
         print('\033[1;92m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
-def clear():
+ def clear():
         os.system(f'clear')
         print(logo)
 loop=0
