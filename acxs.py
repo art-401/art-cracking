@@ -417,8 +417,7 @@ def ZEA():
                                         menu()
                                 
                                 linex()
-                                print('\033[1;32m [1] Method 1')
-				print('\033[1;32m [2] Method 2')
+                                print('\033[1;32m [1] Method 1 [2] Method 2')
                                 linex()
                                 mthd=input('\033[1;32m Choose: ')
                                 linex()
