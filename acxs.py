@@ -395,10 +395,7 @@ def ZEA():
                 clear()
                 x = ("zea")
                 if x == ("zea"):
-                        print(' [1] File cloning')
-			print(' [2] Random Cloning')
-			print(' [3] My facebook')
-			print(' [0] Exit menu')
+                        print(' [1] File cloning\n [2] Random Cloning\n [3] My facebook \n [0] Exit menu')
                         linex()
                         xd=input('\033[1;32m Choose an option: ')
                         if xd in ['3','03']:
